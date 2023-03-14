@@ -57,33 +57,38 @@ public class App
         System.out.println("Door Count " + car2.doorCount);
         System.out.println("Color " + car2.color);
 
+        double distanceForCar1 = carReference.accelerate(60,1);
 
-        System.out.println("Initial name for car1: " + carReference.name);
-        carReference.name = "Audi";
-        System.out.println("Changed name for car1: " + carReference.name);
-
-        carReference = new Car();
-        System.out.println("Name of new car: " + carReference.name);
-        carReference.name = "BMW";
-        System.out.println("Name of new car: " + carReference.name);
-
-        carReference = car2;  // am in memorie un singur obiect cu 2 referinte catre el
-        System.out.println("Name of car referenced from 2 variables. carReference: " + carReference.name);
-        System.out.println("Name of car referenced from 2 variables. car2: " + car2.name);
+        double distanceForCar2 = car2.accelerate(100,1);
 
 
-        car2.name = "Dacia";
-        System.out.println("Updated name of car referenced from 2 variables. carReference: " + carReference.name);
-        System.out.println("Updated name of car referenced from 2 variables. car2: " + car2.name);
 
-        carReference.name = "Ford";
-        System.out.println("Updated again name of car referenced from 2 variables. carReference: " + carReference.name);
-        System.out.println("Updated again name of car referenced from 2 variables. car2: " + car2.name);
-
-        car2 = null;
-        // System.out.println(car2.name); --> will generate NullPointerException
-
-        System.out.println(carReference.name);
+//        System.out.println("Initial name for car1: " + carReference.name);
+//        carReference.name = "Audi";
+//        System.out.println("Changed name for car1: " + carReference.name);
+//
+//        carReference = new Car();
+//        System.out.println("Name of new car: " + carReference.name);
+//        carReference.name = "BMW";
+//        System.out.println("Name of new car: " + carReference.name);
+//
+//        carReference = car2;  // am in memorie un singur obiect cu 2 referinte catre el
+//        System.out.println("Name of car referenced from 2 variables. carReference: " + carReference.name);
+//        System.out.println("Name of car referenced from 2 variables. car2: " + car2.name);
+//
+//
+//        car2.name = "Dacia";
+//        System.out.println("Updated name of car referenced from 2 variables. carReference: " + carReference.name);
+//        System.out.println("Updated name of car referenced from 2 variables. car2: " + car2.name);
+//
+//        carReference.name = "Ford";
+//        System.out.println("Updated again name of car referenced from 2 variables. carReference: " + carReference.name);
+//        System.out.println("Updated again name of car referenced from 2 variables. car2: " + car2.name);
+//
+//        car2 = null;
+//        // System.out.println(car2.name); --> will generate NullPointerException
+//
+//        System.out.println(carReference.name);
 
 
     }
