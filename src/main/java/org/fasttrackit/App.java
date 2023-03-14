@@ -21,7 +21,7 @@ public class App
         engine1.capacity = 3000;
         carReference.engine = engine1;
 
-        System.out.println("Engine1 capacity: " + engine1.capacity);
+        System.out.println("engine capacity: " + engine1.capacity);
         System.out.println("Car engine capacity: " + carReference.engine.capacity);
 
         engine1.capacity = 4000;
@@ -65,7 +65,7 @@ public class App
         carReference = new Car();
         System.out.println("Name of new car: " + carReference.name);
         carReference.name = "BMW";
-
+        System.out.println("Name of new car: " + carReference.name);
 
         carReference = car2;  // am in memorie un singur obiect cu 2 referinte catre el
         System.out.println("Name of car referenced from 2 variables. carReference: " + carReference.name);
