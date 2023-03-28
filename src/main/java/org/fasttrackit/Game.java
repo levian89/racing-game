@@ -6,8 +6,6 @@ import org.fasttrackit.utils.ScannerUtils;
 
 public class Game {
 
-    ScannerUtils scannerUtils = new ScannerUtils();
-
     public void start() {
         System.out.println("Welcome to the racing game!");
 
@@ -22,11 +20,11 @@ public class Game {
 
     private int getPlayerCountFromUser() {
         System.out.println("Please enter the number of players:");
-        return scannerUtils.nextIntAndMoveToNextLine();
+        return ScannerUtils.nextIntAndMoveToNextLine();
     }
 
     private String getVehicleNameFromUser() {
         System.out.println("Please enter vehicle name:");
-        return scannerUtils.nextLine();
+        return ScannerUtils.nextLine();
     }
 }
