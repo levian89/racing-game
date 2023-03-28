@@ -2,6 +2,9 @@ package org.fasttrackit;
 
 public class Vehicle {
 
+    // class variable(static variable)
+    static int totalVehicleCount;
+
     // instance variables
     String name;
     double fuelLevel;
@@ -15,6 +18,7 @@ public class Vehicle {
     public Vehicle(String name, double maxSpeed) {
         this.name = name;
         this.maxSpeed = maxSpeed;
+        totalVehicleCount++;
     }
 
 

@@ -4,9 +4,23 @@ public class App
 {
     public static void main( String[] args )
     {
-
         Game game = new Game();
         game.start();
+
+//        Vehicle vehicle1 = new Vehicle("Dacia", 43);
+//
+//        vehicle1.totalVehicleCount = 1;
+//
+//        Vehicle vehicle2 = new Vehicle("Lada", 54);
+//
+//        vehicle2.totalVehicleCount = 2;
+//
+//        Vehicle.totalVehicleCount = 2;
+//
+//        System.out.println("Total count from vehicle " + vehicle1.name + ": " + vehicle1.totalVehicleCount);
+//        System.out.println("Total count from vehicle " + vehicle2.name + ": " + vehicle2.totalVehicleCount);
+//        System.out.println("Total count from vehicle: " + Vehicle.totalVehicleCount);
+
 
 
 //        System.out.println("Hello World!");
